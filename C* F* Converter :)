@@ -1,11 +1,11 @@
 temp = input ("The current weather outside is: ")
 
-conv = input ("C -> F or F -> C? Type either C or F ").lower
+conv = input ("C -> F or F -> C? Type either C or F: ").lower
 a = (str(temp))   # a = temperature
 b = (str(conv))   # b = either Celcius or Farenheight
-print (type(a)) 
-print (type(b))
 if b == "c":
     print ((temp * 9/5)+32)
+elif b == "f":
+    print ((temp - 32) * 5/9)
 
 
